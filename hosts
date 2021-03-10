@@ -1,0 +1,8 @@
+[Centos_7]
+
+server_1 ansible_host=192.168.0.117 ansible_port=22 ansible_user=valk ansible_ssh_pass=root 
+
+
+[Centos_7:vars]
+host_key_checking=false
+ansible_sudo_pass=root

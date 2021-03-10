@@ -1,0 +1,7 @@
+---
+- name: Skillup
+  become: True
+  hosts: Centos_7
+  roles:
+    - epel-repository
+

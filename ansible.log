@@ -1,0 +1,270 @@
+2021-03-09 00:56:50,015 p=36906 u=valkyrie n=ansible | server_1 | FAILED! => {
+    "msg": "to use the 'ssh' connection type with passwords, you must install the sshpass program"
+}
+2021-03-09 00:57:56,190 p=37321 u=valkyrie n=ansible | server_1 | FAILED! => {
+    "msg": "Using a SSH password instead of a key is not possible because Host Key checking is enabled and sshpass does not support this.  Please add this host's fingerprint to your known_hosts file to manage this host."
+}
+2021-03-09 00:58:40,526 p=37342 u=valkyrie n=ansible | server_1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-03-09 00:59:22,745 p=37403 u=valkyrie n=ansible | server_1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-03-09 01:14:26,155 p=37864 u=valkyrie n=ansible | ERROR! conflicting action statements: ansible.posix.selinux, state
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 4, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Disable SELinux
+      ^ here
+
+2021-03-09 01:15:37,240 p=37937 u=valkyrie n=ansible | ERROR! conflicting action statements: ansible.posix.selinux, state
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 4, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - name: Disable SELinux
+    ^ here
+
+2021-03-09 01:16:10,244 p=37956 u=valkyrie n=ansible | ERROR! couldn't resolve module/action 'ansible.posix.selinux'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 4, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - name: Disable SELinux
+    ^ here
+
+2021-03-09 01:17:31,401 p=38147 u=valkyrie n=ansible | ERROR! couldn't resolve module/action 'ansible.posix.selinux'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 5, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - name: Disable SELinux
+    ^ here
+
+2021-03-09 01:18:29,610 p=38169 u=valkyrie n=ansible | ERROR! couldn't resolve module/action 'ansible.posix.selinux'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Disable SELinux
+      ^ here
+
+2021-03-09 01:19:22,725 p=38188 u=valkyrie n=ansible | ERROR! couldn't resolve module/action 'ansible.posix.selinux'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Disable SELinux
+      ^ here
+
+2021-03-09 01:20:44,793 p=38248 u=valkyrie n=ansible | Process install dependency map
+2021-03-09 01:20:44,794 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:44,894 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:44,994 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:45,095 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:45,195 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:45,296 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:45,396 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:45,496 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:45,597 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:45,697 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:45,797 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:45,898 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:45,998 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:46,098 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:46,199 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:46,299 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:46,400 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:46,500 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:46,600 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:46,701 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:46,801 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:46,902 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:47,002 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:47,103 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:47,203 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:47,304 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:47,404 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:47,504 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:47,605 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:47,705 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:47,806 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:47,906 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:48,007 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:48,107 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:48,208 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:48,308 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:48,409 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:48,509 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:48,610 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:48,710 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:48,811 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:48,911 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:49,012 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:49,113 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:49,213 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:49,314 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:49,414 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:49,515 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:49,615 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:49,716 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:49,817 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:49,917 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:50,018 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:50,118 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:50,219 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:50,320 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:50,420 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:50,521 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:50,621 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:50,722 p=38248 u=valkyrie n=ansible | Starting collection install process
+2021-03-09 01:20:50,722 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:50,823 p=38248 u=valkyrie n=ansible | Installing 'ansible.posix:1.2.0' to '/home/valkyrie/.ansible/collections/ansible_collections/ansible/posix'
+2021-03-09 01:20:50,823 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:50,924 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:51,024 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:51,125 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:51,225 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:51,326 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:51,426 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:51,527 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:51,627 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:51,728 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:51,828 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:20:51,929 p=38248 u=valkyrie n=ansible | |
+2021-03-09 01:20:52,029 p=38248 u=valkyrie n=ansible | /
+2021-03-09 01:20:52,130 p=38248 u=valkyrie n=ansible | -
+2021-03-09 01:20:52,230 p=38248 u=valkyrie n=ansible | \
+2021-03-09 01:21:02,709 p=38269 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:21:39,008 p=38306 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:22:50,537 p=38337 u=valkyrie n=ansible | ERROR! the playbook: all could not be found
+2021-03-09 01:24:15,351 p=38354 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:26:24,855 p=38389 u=valkyrie n=ansible | ERROR! the playbook: all could not be found
+2021-03-09 01:28:20,402 p=38440 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:28:23,822 p=38445 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:28:30,743 p=38448 u=valkyrie n=ansible | ERROR! the playbook: all could not be found
+2021-03-09 01:28:38,178 p=38450 u=valkyrie n=ansible | [WARNING]: Unable to parse /home/valkyrie/work/ansible_dir/ansible_1/Centos_7 as an inventory source
+
+2021-03-09 01:28:38,178 p=38450 u=valkyrie n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-03-09 01:28:38,178 p=38450 u=valkyrie n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost
+does not match 'all'
+
+2021-03-09 01:28:38,363 p=38450 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:31:32,226 p=38485 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:33:05,393 p=38530 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:33:30,477 p=38538 u=valkyrie n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-03-09 01:36:25,379 p=38630 u=valkyrie n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: hosts
+
+2021-03-09 01:36:25,379 p=38630 u=valkyrie n=ansible | PLAY [Skillup] *****************************************************************************************
+2021-03-09 01:36:25,379 p=38630 u=valkyrie n=ansible | skipping: no hosts matched
+2021-03-09 01:36:25,379 p=38630 u=valkyrie n=ansible | PLAY RECAP *********************************************************************************************
+2021-03-09 01:37:15,592 p=38663 u=valkyrie n=ansible | PLAY [Skillup] *****************************************************************************************
+2021-03-09 01:37:15,605 p=38663 u=valkyrie n=ansible | TASK [Gathering Facts] *********************************************************************************
+2021-03-09 01:37:16,484 p=38663 u=valkyrie n=ansible | fatal: [server_1]: FAILED! => {"msg": "Missing sudo password"}
+2021-03-09 01:37:16,485 p=38663 u=valkyrie n=ansible | PLAY RECAP *********************************************************************************************
+2021-03-09 01:37:16,486 p=38663 u=valkyrie n=ansible | server_1                   : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-03-09 01:37:58,029 p=38719 u=valkyrie n=ansible | [WARNING]:  * Failed to parse /home/valkyrie/work/ansible_dir/ansible_1/hosts with yaml plugin: Syntax
+Error while loading YAML.   did not find expected <document start>  The error appears to be in
+'/home/valkyrie/work/ansible_dir/ansible_1/hosts': line 3, column 1, but may be elsewhere in the file
+depending on the exact syntax problem.  The offending line appears to be:   server_1
+ansible_host=192.168.0.117 ansible_port=22 ansible_user=valk ansible_ssh_pass=root ^ here
+
+2021-03-09 01:37:58,029 p=38719 u=valkyrie n=ansible | [WARNING]:  * Failed to parse /home/valkyrie/work/ansible_dir/ansible_1/hosts with ini plugin:
+/home/valkyrie/work/ansible_dir/ansible_1/hosts:9: Expected key=value, got: ansible_sudo_pass: root
+
+2021-03-09 01:37:58,029 p=38719 u=valkyrie n=ansible | [WARNING]: Unable to parse /home/valkyrie/work/ansible_dir/ansible_1/hosts as an inventory source
+
+2021-03-09 01:37:58,029 p=38719 u=valkyrie n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-03-09 01:37:58,029 p=38719 u=valkyrie n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost
+does not match 'all'
+
+2021-03-09 01:37:58,209 p=38719 u=valkyrie n=ansible | PLAY [Skillup] *****************************************************************************************
+2021-03-09 01:37:58,220 p=38719 u=valkyrie n=ansible | TASK [Gathering Facts] *********************************************************************************
+2021-03-09 01:37:58,706 p=38719 u=valkyrie n=ansible | fatal: [server_1]: FAILED! => {"msg": "Missing sudo password"}
+2021-03-09 01:37:58,707 p=38719 u=valkyrie n=ansible | PLAY RECAP *********************************************************************************************
+2021-03-09 01:37:58,707 p=38719 u=valkyrie n=ansible | server_1                   : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-03-09 01:39:10,587 p=38813 u=valkyrie n=ansible | PLAY [Skillup] *****************************************************************************************
+2021-03-09 01:39:10,600 p=38813 u=valkyrie n=ansible | TASK [Gathering Facts] *********************************************************************************
+2021-03-09 01:39:11,974 p=38813 u=valkyrie n=ansible | ok: [server_1]
+2021-03-09 01:39:11,981 p=38813 u=valkyrie n=ansible | TASK [Disable SELinux] *********************************************************************************
+2021-03-09 01:39:12,556 p=38813 u=valkyrie n=ansible | [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'. State change will take
+effect next reboot.
+
+2021-03-09 01:39:12,556 p=38813 u=valkyrie n=ansible | changed: [server_1]
+2021-03-09 01:39:12,558 p=38813 u=valkyrie n=ansible | PLAY RECAP *********************************************************************************************
+2021-03-09 01:39:12,558 p=38813 u=valkyrie n=ansible | server_1                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-03-09 01:47:31,625 p=39055 u=valkyrie n=ansible | - Role epel-repository was created successfully
+2021-03-09 01:47:46,412 p=39061 u=valkyrie n=ansible | ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 9, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        state: disabled
+ roles:
+ ^ here
+
+2021-03-09 01:48:03,909 p=39074 u=valkyrie n=ansible | ERROR! the role 'epel-release' was not found in /home/valkyrie/work/ansible_dir/ansible_1/roles:/home/valkyrie/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/valkyrie/work/ansible_dir/ansible_1
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 10, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - epel-release
+      ^ here
+
+2021-03-09 01:50:03,553 p=39163 u=valkyrie n=ansible | ERROR! the role 'epel-release' was not found in /home/valkyrie/work/ansible_dir/ansible_1/roles:/home/valkyrie/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/valkyrie/work/ansible_dir/ansible_1
+
+The error appears to be in '/home/valkyrie/work/ansible_dir/ansible_1/playbook.yml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - epel-release
+      ^ here
+
+2021-03-09 01:50:37,130 p=39215 u=valkyrie n=ansible | PLAY [Skillup] *****************************************************************************************
+2021-03-09 01:50:37,140 p=39215 u=valkyrie n=ansible | TASK [Gathering Facts] *********************************************************************************
+2021-03-09 01:50:38,259 p=39215 u=valkyrie n=ansible | ok: [server_1]
+2021-03-09 01:50:38,265 p=39215 u=valkyrie n=ansible | TASK [epel-repository : 1.Check if EPEL repo is already configured.] ***********************************
+2021-03-09 01:50:38,673 p=39215 u=valkyrie n=ansible | ok: [server_1]
+2021-03-09 01:50:38,679 p=39215 u=valkyrie n=ansible | TASK [epel-repository : 2.Install EPEL repo.] **********************************************************
+2021-03-09 01:50:50,763 p=39215 u=valkyrie n=ansible | changed: [server_1]
+2021-03-09 01:50:50,770 p=39215 u=valkyrie n=ansible | TASK [epel-repository : 3.Import EPEL GPG key.] ********************************************************
+2021-03-09 01:50:52,501 p=39215 u=valkyrie n=ansible | changed: [server_1]
+2021-03-09 01:50:52,502 p=39215 u=valkyrie n=ansible | PLAY RECAP *********************************************************************************************
+2021-03-09 01:50:52,503 p=39215 u=valkyrie n=ansible | server_1                   : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
